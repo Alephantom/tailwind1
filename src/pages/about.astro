@@ -1,13 +1,15 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
+
 const metadata = {
-  title: 'About us',
+  title: 'About She Leads Product',
+  ignoreTitleTemplate: true,
 };
 ---
 
@@ -15,37 +17,140 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
-    image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
-    }}
-  >
-    <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
-    </Fragment>
+  tagline="About us"
+  image={{
+    src: '~/assets/images/abstract-psychedelic-papercut-background.jpg',
+    alt: 'papercut image designed by Freepik',
+  }}
+>
+  <Fragment slot="title">
+    Empowering Women in Product Management <br />
+    <span class="text-accent dark:text-white highlight"> Together, We Build the Future</span>
+  </Fragment>
 
-    <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
-    </Fragment>
-  </Hero>
+  <Fragment slot="subtitle">
+    Women make up only 26% of the tech workforce globally, and just 14% hold leadership positions in STEM. This
+    underrepresentation highlights the need for initiatives that amplify women's voices, showcase their work, and create
+    a supportive community. <strong>She Leads Product</strong> exists to empower women to make their achievements visible,
+    inspire others, and pave the way for future generations. Join us in breaking barriers and reshaping the face of
+    tech.
+  </Fragment>
+</Hero>
 
-  <!-- Stats Widget ****************** -->
+<!-- Stats Widget ****************** -->
 
-  <Stats
-    title="Statistics about us"
-    stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
-    ]}
-  />
+<Stats
+  title="Why She Leads Product Matters"
+  stats={[
+    { title: 'Women in Tech', amount: '26%' },
+    { title: 'Women in STEM Leadership', amount: '14%' },
+    { title: 'Global Gender Pay Gap in STEM', amount: '16%' },
+    { title: 'Women Inventors', amount: '10%' },
+  ]}
+/>
 
-  <!-- Features3 Widget ************** -->
+<!-- Features3 Widget ************** -->
+
+<Features3
+  columns={3}
+  isAfterContent={true}
+  items={[
+    {
+      title: 'Visibility',
+      description:
+        'By showcasing the work of women in product management, we shine a spotlight on achievements that inspire and break stereotypes.',
+      icon: 'tabler:eye',
+    },
+    {
+      title: 'Empowerment',
+      description:
+        'Creating a space where women feel supported, valued, and encouraged to share their skills and ideas.',
+      icon: 'tabler:heart',
+    },
+    {
+      title: 'Collaboration',
+      description:
+        'Building a network of professionals who exchange ideas, mentor each other, and foster innovation in product management.',
+      icon: 'tabler:users',
+    },
+    {
+      title: 'Advocacy',
+      description:
+        'Driving awareness about the challenges women face in tech and pushing for change through community initiatives.',
+      icon: 'tabler:user',
+    },
+    {
+      title: 'Skill Development',
+      description:
+        'Providing resources, workshops, and opportunities for women to continuously grow and thrive in their careers.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Recognition',
+      description:
+        'Highlighting contributions of women in tech to ensure their work gets the credit it deserves.',
+      icon: 'tabler:award',
+    },
+  ]}
+
+/>
+
+<!-- Steps2 Widget ****************** -->
+
+<Steps2
+  title="Our Values"
+  subtitle="At She Leads Product, we are driven by values that foster inclusion, innovation, and empowerment."
+  items={[
+    {
+      title: 'Community Support',
+      description:
+        'Creating a network where women uplift and learn from each other, fostering growth and mutual success.',
+    },
+    {
+      title: 'Breaking Barriers',
+      description:
+        'Challenging stereotypes and advocating for equitable representation in STEM and tech industries.',
+    },
+    {
+      title: 'Celebrating Achievements',
+      description:
+        'Acknowledging and promoting the incredible contributions women make in product management.',
+    },
+  ]}
+/>
+
+<!-- Steps2 Widget 
+
+<Steps2
+  title="Achievements"
+  subtitle="Together, we are driving change and making an impact in tech and product management."
+  isReversed={true}
+  callToAction={{
+    text: 'Join us',
+    href: '/contact',
+  }}
+  items={[
+    {
+      title: 'Global Recognition',
+      description: 'Amplifying the voices of women in tech through initiatives and outreach.',
+      icon: 'tabler:globe',
+    },
+    {
+      title: 'Growing Community',
+      description:
+        'With 500+ members, we’re building a movement that empowers and connects women across the globe.',
+      icon: 'tabler:users',
+    },
+    {
+      title: 'Driving Innovation',
+      description:
+        'Encouraging women to lead in product development and shape the future of technology.',
+      icon: 'tabler:award',
+    },
+  ]}
+/>
+****************** -->
+  <!-- Features3 Widget 
 
   <Features3
     title="Our templates"
@@ -73,112 +178,9 @@ const metadata = {
       },
     ]}
   />
+************** -->
 
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
+  <!-- Features2 Widget 
 
   <Features2
     title="Our locations"
@@ -203,8 +205,8 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- Features2 Widget ************** -->
+************** -->
+  <!-- Features2 Widget 
 
   <Features2
     title="Technical Support"
@@ -225,4 +227,5 @@ const metadata = {
       },
     ]}
   />
+  ************** -->
 </Layout>

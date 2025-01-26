@@ -26,27 +26,27 @@ export const headerData = {
     //   //   },
     //   // ],
     // },
-    {
-      text: 'About',
-      links: [
-        {
-          text: 'About',
-          href: getPermalink('/'),
-        },
-        {
-          text: 'Team',
-          href: getPermalink('/team'),
-        },
-        // {
-        //   text: 'Testimonials',
-        //   href: getPermalink('/testimonials'),
-        // },
-        // {
-        //   text: 'FAQ',
-        //   href: getPermalink('/faq'),
-        // },
-      ],
-    },
+    // {
+    //   text: 'About',
+    //   links: [
+    //     {
+    //       text: 'About',
+    //       href: getPermalink('/'),
+    //     },
+    //     {
+    //       text: 'Team',
+    //       href: getPermalink('/team'),
+    //     },
+    //     // {
+    //     //   text: 'Testimonials',
+    //     //   href: getPermalink('/testimonials'),
+    //     // },
+    //     // {
+    //     //   text: 'FAQ',
+    //     //   href: getPermalink('/faq'),
+    //     // },
+    //   ],
+    // },
     {
       text: 'Events',
       href: getPermalink('/events'),
@@ -80,8 +80,8 @@ export const headerData = {
       text: 'Projects',
       links: [
         {
-          text: 'Projects from the Community',
-          // href: getPermalink('/projects'),
+          text: 'About us',
+          href: getPermalink('/about'),
         },
         {
           text: 'AllWomen PM Bootcamp',
