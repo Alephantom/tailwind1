@@ -4,31 +4,126 @@ import { getPermalink, getBlogPermalink,
 
 export const headerData = {
   links: [
+    // {
+    //   text: 'Home',
+    //   href: '#',
+    //   // links: [
+    //   //   {
+    //   //     text: 'SaaS',
+    //   //     href: getPermalink('/homes/saas'),
+    //   //   },
+    //   //   {
+    //   //     text: 'Startup',
+    //   //     href: getPermalink('/homes/startup'),
+    //   //   },
+    //   //   {
+    //   //     text: 'Mobile App',
+    //   //     href: getPermalink('/homes/mobile-app'),
+    //   //   },
+    //   //   {
+    //   //     text: 'Personal',
+    //   //     href: getPermalink('/homes/personal'),
+    //   //   },
+    //   // ],
+    // },
     {
-      text: 'Home',
-      href: '#',
+      text: 'About',
+      links: [
+        {
+          text: 'About',
+          href: getPermalink('/'),
+        },
+        {
+          text: 'Team',
+          href: getPermalink('/team'),
+        },
+        // {
+        //   text: 'Testimonials',
+        //   href: getPermalink('/testimonials'),
+        // },
+        // {
+        //   text: 'FAQ',
+        //   href: getPermalink('/faq'),
+        // },
+      ],
+    },
+    {
+      text: 'Events',
+      href: getPermalink('/events'),
       // links: [
       //   {
-      //     text: 'SaaS',
-      //     href: getPermalink('/homes/saas'),
+      //     text: 'She Leads Product Events',
+      //     // href: getPermalink('/slp-events'),
       //   },
       //   {
-      //     text: 'Startup',
-      //     href: getPermalink('/homes/startup'),
-      //   },
-      //   {
-      //     text: 'Mobile App',
-      //     href: getPermalink('/homes/mobile-app'),
-      //   },
-      //   {
-      //     text: 'Personal',
-      //     href: getPermalink('/homes/personal'),
+      //     text: 'Events from Friends',
+      //     // href: getPermalink('/sponsored-events'),
       //   },
       // ],
+    },
+    // {
+    //   text: 'Pricing',
+    //   links: [
+    //     {
+    //       text: 'Pricing',
+    //       href: getPermalink('/pricing'),
+    //     },
+    //     {
+    //       text: 'Pricing Details',
+    //       href: getPermalink('/pricing-details'),
+    //     },
+    //   ],
+    // },
+
+
+    {
+      text: 'Projects',
+      links: [
+        {
+          text: 'Projects from the Community',
+          // href: getPermalink('/projects'),
+        },
+        {
+          text: 'AllWomen PM Bootcamp',
+          // href: getPermalink('/Bootcamp'),
+        },
+      ],
+    },
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
+      // links: [
+      //   {
+      //     text: 'Blog List',
+      //     href: getBlogPermalink(),
+      //   },
+
+      //   {
+      //     text: 'Category Page',
+      //     href: getPermalink('tutorials', 'category'),
+      //   },
+      //   {
+      //     text: 'Tag Page',
+      //     href: getPermalink('astro', 'tag'),
+      //   },
+      // ],
+    },
+
+    {
+      text: 'Contact',
+      href: getPermalink('/contact'),   
     },
     {
       text: 'Pages',
       links: [
+        {
+          text: 'Article',
+          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+        },
+        {
+          text: 'Article (with MDX)',
+          href: getPermalink('markdown-elements-demo-post', 'post'),
+        },
         {
           text: 'Features (Anchor Link)',
           href: getPermalink('/#features'),
@@ -88,37 +183,12 @@ export const headerData = {
     //     },
     //   ],
     // },
-    {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+    
+    // {
+    //   text: 'Widgets',
+    //   href: '#',
+    // },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
