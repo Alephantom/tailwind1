@@ -4,12 +4,12 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+// import Steps from '~/components/widgets/Steps.astro';
+// import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+// import FAQs from '~/components/widgets/FAQs.astro';
+// import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -53,51 +53,50 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
-    items={[
-      {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
-    ]}
-  />
-
-  <!-- Content Widget **************** -->
+  id="Elevate & Empower"
+  tagline="Elevate & Empower"
+  title="Women Driving Change"
+  subtitle="A vibrant community and platform designed to empower women in product management to learn, grow, and lead with confidence."
+  items={[
+    {
+      title: 'Monthly Round Tables',
+      description:
+        'Engage in monthly discussions with women in product management at all career stages to exchange ideas, learn, and empower each other.',
+      icon: 'tabler:circle',
+    },
+    {
+      title: 'Showcase Your Work',
+      description:
+        'A platform where you can present your projects, achievements, and passions, gaining recognition and visibility beyond your workplace.',
+      icon: 'tabler:award',
+    },
+    {
+      title: 'Tech News & Insights',
+      description:
+        'Stay informed with our blog featuring the latest in tech innovations, product management strategies, and essential tools.',
+      icon: 'tabler:news',
+    },
+    {
+      title: 'Continuous Learning',
+      description:
+        'Grow together with a community that fosters lifelong learning, collaboration, and skill development for every stage of your journey.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Empowerment & Support',
+      description:
+        'Be part of a network that celebrates resilience, collaboration, and the achievements of women in tech.',
+      icon: 'tabler:heart',
+    },
+    {
+      title: 'Shaping the Future of Tech',
+      description:
+        'Join a movement where women lead the way in creating innovative, inclusive, and impactful products.',
+      icon: 'tabler:rocket',
+    },
+  ]}
+/>
+  <!-- Content Widget 
 
   <Content
     isReversed
@@ -134,8 +133,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
+**************** -->
+  <!-- Content Widget 
 
   <Content
     isAfterContent
@@ -171,8 +170,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
+**************** -->
+  <!-- Content Widget 
 
   <Content
     isReversed
@@ -209,8 +208,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Steps Widget ****************** -->
+**************** -->
+  <!-- Steps Widget 
 
   <Steps
     title="Get your dream website up and running in no time with AstroWind."
@@ -243,8 +242,8 @@ const metadata = {
       alt: 'Steps image',
     }}
   />
-
-  <!-- Features2 Widget ************** -->
+****************** -->
+  <!-- Features2 Widget 
 
   <Features2
     title="Most used widgets"
@@ -307,18 +306,18 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
+************** -->
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+  title="Explore Insights on Our Blog"
+  information={`Our blog is a hub for the latest trends, tips, and insights in product management and tech innovation.
+                  Discover articles on tools, strategies, and success stories that inspire and empower women in product.
+                  Whether you're looking to stay informed or learn something new, our blog is here to support your journey.
+          `}
+/>
 
-  <!-- FAQs Widget ******************* -->
+  <!-- FAQs Widget 
 
   <FAQs
     title="Frequently Asked Questions"
@@ -358,8 +357,8 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- Stats Widget ****************** -->
+******************* -->
+  <!-- Stats Widget 
 
   <Stats
     stats={[
@@ -369,27 +368,25 @@ const metadata = {
       { title: 'Users', amount: '48.4K' },
     ]}
   />
-
+****************** -->
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Contact Us',
+      href: '/contact',
+      target: '_self',
+      icon: 'tabler:message',
+    },
+  ]}
+>
+  <Fragment slot="title">
+Open Mike - February Session  </Fragment>
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+  <Fragment slot="subtitle">
+    Join a community of women in product management to connect, learn, and empower each other. <br class="hidden md:inline" />Don't miss this opportunity to shape the future of tech together!
+  </Fragment>
+</CallToAction>
 </Layout>
