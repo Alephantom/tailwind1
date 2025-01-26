@@ -1,5 +1,5 @@
 ---
-publishDate: 2025-01-23 T00:00:00Z
+publishDate: 2025-01-23T00:00:00Z
 title: 'Women Transitioning into Tech: A Journey into Product Management'
 excerpt: 'Exploring the aspirations, challenges, and opportunities for women transitioning into tech, especially in product management.'
 image: 'https://img.freepik.com/free-vector/freelancer-working-laptop-her-house_1150-35054.jpg'
