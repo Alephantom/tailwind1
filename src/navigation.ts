@@ -84,8 +84,8 @@ export const headerData = {
           href: getPermalink('/about'),
         },
         {
-          text: 'AllWomen PM Bootcamp',
-          // href: getPermalink('/Bootcamp'),
+          text: 'Product Management Bootcamp',
+          href: getPermalink('/category/projects-pm-bootcamp'),
         },
       ],
     },
